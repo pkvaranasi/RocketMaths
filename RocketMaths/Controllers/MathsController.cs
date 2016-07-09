@@ -11,30 +11,30 @@ namespace RocketMaths.Controllers
     {
         [Route("api/Maths/Add/{a}/{b}")]
         [HttpGet]
-        public string Add(int a, int b)
+        public double Add(int a, int b)
         {
-            return (a + b).ToString();
+            return (a + b);
         }
 
         [Route("api/Maths/Subtract/{a}/{b}")]
         [HttpGet]
-        public string Subtract(int a, int b)
+        public double Subtract(int a, int b)
         {
-            return (a - b).ToString();
+            return (a - b);
         }
 
         [Route("api/Maths/Multiply/{a}/{b}")]
         [HttpGet]
-        public string Multiply(int a, int b)
+        public double Multiply(int a, int b)
         {
-            return (a * b).ToString();
+            return (a * b);
         }
 
         [Route("api/Maths/Divide/{a}/{b}")]
         [HttpGet]
-        public string Divide(int a, int b)
+        public double Divide(int a, int b)
         {
-            return (a / b).ToString();
+            return (a / b);
         }
     }
 }
