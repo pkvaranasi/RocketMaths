@@ -36,5 +36,12 @@ namespace RocketMaths.Controllers
         {
             return (a / b);
         }
+
+        [Route("api/Maths/GetName")]
+        [HttpGet]
+        public string GetName()
+        {
+            return "Hello User.";
+        }
     }
 }
