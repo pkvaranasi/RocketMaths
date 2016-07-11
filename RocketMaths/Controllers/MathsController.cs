@@ -13,7 +13,6 @@ namespace RocketMaths.Controllers
         [HttpGet]
         public double Add(int a, int b)
         {
-            return (a + b).ToString();
             return (a + b);
         }
 
